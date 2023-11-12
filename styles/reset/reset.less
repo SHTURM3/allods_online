@@ -1,0 +1,58 @@
+*{
+    font-family: @ff;    
+}
+
+body{
+    color: @main-color;
+    box-sizing: border-box;
+    font-style: @ft;
+    line-height: @lh;
+}
+
+h1, h2, h3, h4, h5, h6, ul, p{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2{
+    font-weight: @fw-bold;
+}
+
+h1{
+    font-size: @fs-title;
+}
+
+h2{
+    font-size: @fs-subtitle;
+    color: @subtitle-color;
+}
+
+p, th{
+   font-weight: @fw-light; 
+}
+
+p{
+    font-size: @fs-p_default;
+}
+
+th{
+    font-size: @fs-p_small;
+    color: @additional-color;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

@@ -1,0 +1,41 @@
+.flex(){
+    display: flex;
+}
+
+.flex-center(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-align-end(){
+    display: flex;
+    align-items: flex-end;
+}
+
+.flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg(@bg){
+    background-image: @bg;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: @bsh;
+}
+
+.anim(@name, @dur){
+    animation-name: @name;
+    animation-duration: @dur;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

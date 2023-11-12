@@ -1,0 +1,22 @@
+#set__vito{
+    position: relative;
+
+    .set__img-wrapper{
+        width: @vito-image-w;
+        height: @vito-image-h;
+    }
+
+    .ellipse{
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: -30%;
+        margin: auto;
+        .anim(set-vito-anim, 5s);
+    }
+
+    img{
+        position: relative;
+        z-index: 1;
+    }
+}
