@@ -1,5 +1,5 @@
 *{
-    font-family: @ff;    
+    font-family: @ff_roboto;    
 }
 
 body{
@@ -7,9 +7,11 @@ body{
     box-sizing: border-box;
     font-style: @ft;
     line-height: @lh;
+    margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, ul, p{
+h1, h2, h3, h4, h5, h6{
+    font-family: @ff_condensed;
     margin: 0;
     padding: 0;
 }
@@ -27,11 +29,11 @@ h2{
     color: @subtitle-color;
 }
 
-p, th{
+p, th, td, span{
    font-weight: @fw-light; 
 }
 
-p{
+p, td, span{
     font-size: @fs-p_default;
 }
 
@@ -40,12 +42,18 @@ th{
     color: @additional-color;
 }
 
+ul, p{
+   margin: 0;
+   padding: 0; 
+}
+
 li{
     list-style: none;
 }
 
 a{
     display: block;
+    font-size: @fs-p_default;
     text-decoration: none;
     transition: 0.3s linear;
     cursor: pointer;
@@ -55,4 +63,18 @@ img{
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+@media screen and (max-width: 950px) {
+    h1{
+        font-size: @fs-title-adptv;
+    }
+
+    h2{
+        font-size: @fs-subtitle-adptv;
+    }
+
+    p, td, a, span{
+        font-size: @fs-p_default-adptv;
+    }
 }

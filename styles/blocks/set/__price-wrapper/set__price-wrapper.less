@@ -1,6 +1,7 @@
 #set__price-wrapper{
     margin-left: -120px;
     margin-bottom: 60px;
+    z-index: 1;
 
     p{
         width: 110px;
@@ -19,6 +20,14 @@
         &:hover{
             background-color: transparent;
             color: @link-bg-color;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #set__price-wrapper{
+        p{
+            font-size: @fs-p_price-adptv; 
         }
     }
 }

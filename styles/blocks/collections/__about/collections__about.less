@@ -1,7 +1,10 @@
 #collections__about{
-    h1{
-        max-width: 730px;
+    h1, p{
         width: 100%;
+    }
+
+    h1{
+        max-width: @collections-h1-w;
         text-transform: uppercase;
         text-align: center;
         margin: 0 auto 25px;
@@ -9,5 +12,24 @@
 
     p{
         font-size: @fs-p_large;
+        max-width: @collections-p-w;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #collections__about{
+        p{
+            font-size: @fs-p_default-adptv;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #collections__about{
+        p{
+           max-width: @collections-p-adptv-w;
+           text-align: center;
+           margin: auto;
+        }
     }
 }
